@@ -1,0 +1,16 @@
+{
+  "name": "@openclaw/local-exec",
+  "version": "2026.4.2",
+  "private": true,
+  "description": "OpenClaw local exec plugin",
+  "type": "module",
+  "dependencies": {},
+  "openclaw": {
+    "bundle": {
+      "stageRuntimeDependencies": true
+    },
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

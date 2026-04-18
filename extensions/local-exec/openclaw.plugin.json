@@ -1,0 +1,22 @@
+{
+  "id": "local-exec",
+  "name": "Local Exec",
+  "description": "Execute bash commands and Python scripts locally or in an OpenSandbox.",
+  "uiHints": {},
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "sandboxEnabled": {
+        "type": "boolean",
+        "default": false,
+        "description": "Run Python scripts in an OpenSandbox container instead of locally."
+      },
+      "sandboxImage": {
+        "type": "string",
+        "default": "local/python-execd",
+        "description": "Docker image to use for the sandbox container."
+      }
+    }
+  }
+}
